@@ -27,6 +27,7 @@ As a user, I want to receive confirmation emails for registration and password r
 4. Functional Requirements
 
 Registration:
+
 The system shall allow users to register a new account by providing the following information:
 Email Address (required, unique)
 Password (required, strong password enforcement - see Non-Functional Requirements)
@@ -37,7 +38,9 @@ The system shall validate the email address format.
 The system shall validate the password against a defined strength policy.
 The system shall send a verification email to the registered email address.
 The account shall not be fully activated until the user clicks on the verification link in the email.
+
 Login:
+
 The system shall allow users to log in using their email address and password.
 The system shall authenticate users against the stored credentials.
 The system shall implement rate limiting to prevent brute-force attacks.
@@ -53,7 +56,9 @@ Administrators shall be able to create new user accounts (including setting role
 Administrators shall be able to edit existing user accounts (including changing roles, enabling/disabling accounts).
 Administrators shall be able to delete user accounts.
 All administrative actions shall be logged for auditing purposes.
+
 Social Login:
+
 The system shall support integration with at least two social login providers (e.g., Google, Facebook).
 The system shall retrieve user profile information from the social login provider (e.g., email, name).
 The system shall create a new user account if one doesn't exist, or link the social login to an existing account.
@@ -63,6 +68,7 @@ The system shall provide a mechanism for invalidating tokens (e.g., logout).
 5. Non-Functional Requirements
 
 Security:
+
 All passwords shall be stored securely using a strong hashing algorithm (e.g., bcrypt, Argon2).
 The system shall be protected against common web vulnerabilities
 (e.g., SQL injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF)).
